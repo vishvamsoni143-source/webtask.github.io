@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IT Company in Himatnagar | SEO, Web Design & Development</title>
+  <meta name="description" content="Local IT company in Himatnagar, Gujarat offering SEO, web design, and web development. Get modern, fast, and SEO-friendly websites that drive leads." />
+
+  <!-- Optional: Open Graph for better sharing -->
+  <meta property="og:title" content="IT Company in Himatnagar | SEO, Web Design & Development" />
+  <meta property="og:description" content="SEO, web design, and web development services in Himatnagar. Modern, responsive, and lead-focused solutions for local businesses." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com" />
+  <meta property="og:image" content="https://example.com/og-image.jpg" />
+
+  <!-- Basic styles in one file for easy copy-paste -->
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: #121732;
+      --muted: #8ea0c7;
+      --text: #eef2ff;
+      --brand: #5b86ff;
+      --brand-2: #71e1f3;
+      --ok: #33d69f;
+      --warn: #ffc857;
+      --danger: #ff6b6b;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 18px;
+      --maxw: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 80% -20%, rgba(91,134,255,.25), transparent 60%),
+                  radial-gradient(800px 400px at 10% 0%, rgba(113,225,243,.18), transparent 60%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: var(--brand-2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
+
+    /* Header */
+    header {
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: blur(10px);
+      background: rgba(11,16,32,.6);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 0; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: .3px; }
+    .logo {
+      width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      box-shadow: var(--shadow);
+      font-weight: 800;
+      color: #0b1020;
+    }
+    nav ul { list-style: none; display: flex; gap: 16px; margin: 0; padding: 0; }
+    nav a { padding: 10px 14px; border-radius: 999px; }
+    nav a:hover { background: rgba(255,255,255,.06); text-decoration: none; }
+
+    .cta-btn {
+      padding: 10px 16px; border-radius: 999px; border: 0; cursor: pointer; font-weight: 700;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #0b1020;
+      box-shadow: var(--shadow);
+    }
+    .cta-btn:hover { filter: brightness(1.05); }
+
+    /* Hero */
+    .hero { padding: 64px 0 36px; }
+    .hero-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 28px; align-items: center; }
+    .hero h1 { font-size: clamp(28px, 3.6vw, 48px); line-height: 1.1; margin: 0 0 14px; }
+    .sub { color: var(--muted); max-width: 60ch; margin-bottom: 18px; }
+    .hero-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 22px; }
+    .card { background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border: 1px solid rgba(255,255,255,.07); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
+    .card h3 { margin: 6px 0 8px; font-size: 18px; }
+    .badge { display: inline-block; padding: 4px 10px; border-radius: 999px; font-size: 12px; letter-spacing: .3px; background: rgba(255,255,255,.08); color: var(--muted); }
+
+    .illustration { border-radius: var(--radius); min-height: 280px; background:
+      radial-gradient(180px 140px at 80% 20%, rgba(113,225,243,.25), transparent 60%),
+      radial-gradient(200px 120px at 20% 80%, rgba(91,134,255,.25), transparent 60%),
+      linear-gradient(135deg, #0e1430, #0b1020);
+      display: grid; place-items: center; border: 1px solid rgba(255,255,255,.06);
+    }
+    .illustration .ring { width: 180px; height: 180px; border-radius: 50%; border: 10px solid rgba(255,255,255,.08); position: relative; }
+    .illustration .ring::after { content: ""; position: absolute; inset: -8px; border-radius: 50%; border: 2px dashed rgba(255,255,255,.14); }
+
+    /* Sections */
+    section { padding: 52px 0; }
+    .section-title { font-size: clamp(22px, 3vw, 34px); margin: 0 0 8px; }
+    .section-sub { color: var(--muted); margin: 0 0 24px; max-width: 62ch; }
+
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+
+    .service { display: flex; flex-direction: column; gap: 10px; }
+    .service .icon { width: 42px; height: 42px; border-radius: 12px; display: grid; place-items: center; background: rgba(255,255,255,.08); font-weight: 800; }
+    .service ul { margin: 0; padding-left: 18px; color: var(--muted); }
+
+    /* Pricing (optional) */
+    .price { font-size: 28px; font-weight: 800; }
+
+    /* Contact */
+    .contact { background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border: 1px solid rgba(255,255,255,.07); border-radius: var(--radius); padding: 20px; }
+    label { display: block; font-weight: 600; margin: 10px 0 6px; }
+    input, textarea { width: 100%; padding: 12px 14px; background: #0e1430; border: 1px solid rgba(255,255,255,.12); border-radius: 12px; color: var(--text); }
+    textarea { min-height: 120px; }
+    .small { color: var(--muted); font-size: 12px; }
+
+    /* Footer */
+    footer { padding: 36px 0; color: var(--muted); border-top: 1px solid rgba(255,255,255,.08); }
+
+    /* Responsive */
+    @media (max-width: 980px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-cards { grid-template-columns: 1fr; }
+      .grid-3 { grid-template-columns: 1fr; }
+      .grid-2 { grid-template-columns: 1fr; }
+      nav ul { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">IT</div>
+        <span>Himatnagar Digital</span>
+      </div>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="cta-btn" href="#contact" aria-label="Get a quote">Get a Quote</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="badge">Himatnagar • Gujarat • India</p>
+        <h1>SEO, Web Design & Development that grows local business</h1>
+        <p class="sub">We help Himatnagar brands get found and convert more leads with modern design, clean code, and data‑driven SEO. Fast, secure, and mobile‑first.</p>
+        <div>
+          <a class="cta-btn" href="#contact">Start a Project</a>
+        </div>
+        <div class="hero-cards">
+          <div class="card"><h3>SEO</h3><p class="small">Local SEO, audits, on‑page, technical fixes, and content strategy.</p></div>
+          <div class="card"><h3>Web Design</h3><p class="small">Responsive, accessible, and conversion‑focused UI/UX.</p></div>
+          <div class="card"><h3>Development</h3><p class="small">WordPress, custom stack, eCommerce, and API integrations.</p></div>
+        </div>
+      </div>
+      <div class="illustration" role="img" aria-label="Abstract illustration of growth and technology">
+        <div class="ring"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-sub">Everything you need to launch, rank, and scale online in Himatnagar and across Gujarat.</p>
+
+      <div class="grid-3">
+        <article class="card service">
+          <div class="icon" aria-hidden="true">S</div>
+          <h3>SEO Services</h3>
+          <p class="small">Rank higher locally and capture qualified traffic.</p>
+          <ul>
+            <li>Local & Technical SEO</li>
+            <li>On‑page optimization</li>
+            <li>Content & keywords</li>
+          </ul>
+        </article>
+
+        <article class="card service">
+          <div class="icon" aria-hidden="true">D</div>
+          <h3>Web Design</h3>
+          <p class="small">Beautiful, fast, and accessible websites that convert.</p>
+          <ul>
+            <li>UI/UX wireframes</li>
+            <li>Responsive layouts</li>
+            <li>Brand‑aligned visuals</li>
+          </ul>
+        </article>
+
+        <article class="card service">
+          <div class="icon" aria-hidden="true">W</div>
+          <h3>Web Development</h3>
+          <p class="small">Clean, secure, and maintainable code for long‑term growth.</p>
+          <ul>
+            <li>WordPress & custom builds</li>
+            <li>eCommerce & payments</li>
+            <li>Performance & security</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work / Highlights -->
+  <section id="work">
+    <div class="container">
+      <h2 class="section-title">Recent Highlights</h2>
+      <p class="section-sub">A quick look at outcomes our clients care about.</p>
+      <div class="grid-3">
+        <div class="card">
+          <h3>+120% Organic Traffic</h3>
+          <p class="small">Local retailer in Himatnagar doubled organic sessions in 4 months.</p>
+        </div>
+        <div class="card">
+          <h3>Sub‑1s LCP</h3>
+          <p class="small">Optimized Core Web Vitals for a Gujarat‑wide B2B website.</p>
+        </div>
+        <div class="card">
+          <h3>50+ New Leads/Month</h3>
+          <p class="small">Redesigned service pages and funnels for a logistics startup.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing (Optional sample) -->
+  <section id="pricing">
+    <div class="container">
+      <h2 class="section-title">Simple Pricing</h2>
+      <p class="section-sub">Transparent plans. Custom quotes available for larger projects.</p>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Starter</h3>
+          <p class="price">₹14,999</p>
+          <p class="small">Single‑page site, basic SEO setup, 1 month support.</p>
+        </div>
+        <div class="card">
+          <h3>Growth</h3>
+          <p class="price">₹39,999</p>
+          <p class="small">Multi‑page site, SEO optimization, analytics, 3 months support.</p>
+        </div>
+        <div class="card">
+          <h3>Scale</h3>
+          <p class="price">₹74,999</p>
+          <p class="small">eCommerce/custom dev, full SEO, performance & security.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Get a Free Proposal</h2>
+      <p class="section-sub">Tell us about your project and we’ll get back within one business day.</p>
+      <div class="grid-2">
+        <form class="contact" onsubmit="event.preventDefault(); alert('Thanks! We\'ll reach out shortly.');">
+          <label for="name">Name</label>
+          <input id="name" name="name" placeholder="Your full name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+          <label for="service">Service</label>
+          <input id="service" name="service" placeholder="SEO / Web Design / Development" />
+
+          <label for="message">Project details</label>
+          <textarea id="message" name="message" placeholder="Tell us what you need…"></textarea>
+
+          <div style="margin-top:14px; display:flex; gap:10px; align-items:center;">
+            <button class="cta-btn" type="submit">Request Quote</button>
+            <span class="small">Or email us: <a href="mailto:hello@example.com">hello@example.com</a></span>
+          </div>
+        </form>
+        <div class="card">
+          <h3>Himatnagar Office</h3>
+          <p class="small">Near ST Bus Stand, Himatnagar, Gujarat 383001</p>
+          <p class="small"><strong>Phone:</strong> +91 99999 00000</p>
+          <p class="small"><strong>Hours:</strong> Mon–Sat, 10:00–19:00 IST</p>
+          <hr style="border-color: rgba(255,255,255,.06); margin: 16px 0;" />
+          <h3>Why choose us?</h3>
+          <ul>
+            <li>Local expertise in Himatnagar</li>
+            <li>SEO‑first design & development</li>
+            <li>Performance + accessibility focused</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="y"></span> Himatnagar Digital — SEO • Web Design • Web Development</p>
+    </div>
+  </footer>
+
+  <!-- Small helper script to set the year -->
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
